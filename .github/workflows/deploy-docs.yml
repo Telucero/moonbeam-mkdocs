@@ -7,7 +7,7 @@ on:
 
 jobs:
   call-deploy:
-    uses: Telucero/workflows/deploy-docs.yml@Central_repo_test  
+    uses: Telucero/workflows/.github/workflows/deploy-docs.yml@Central_repo_test  
     with:
       branch: main  # Branch to deploy from in the docs repo
       repository: Telucero/moonbeam-docs  
@@ -15,3 +15,4 @@ jobs:
       url_prefix: moonbeam-mkdocs  
       submodules: true  # Optional, set to false if not using submodules
     secrets: inherit  
+#permissions:
